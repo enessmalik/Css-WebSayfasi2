@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .container {
+            width: 60%;
+            margin: 10vh auto;
+            text-align: center;
+        }
+        #search-btn {
+            width: 300px;
+        }
+        #search-box {
+            background-color: #F1F6F5;
+        }
+        #options {
+            margin-top: 2px;
+        }
+        .option-box {
+            background-color: #97DECE;
+            height: 80px;
+        }
+        #option-box1 {
+            float: left;
+            margin-right: 2px;
+            width: calc(35% - 2px);
+            padding: 10px;
+        }
+        #option-box2 {
+            font-size: 14px;
+            float: left;
+            margin-right: 2px;
+            width: calc(20% - 2px);
+            padding: 5px;
+        }
+        #option-box3 {
+            float: left;
+            width: 45%;
+        }
+        #options::after {
+            clear: both;
+            content: "";    
+            display: block;
+        }
+        #footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="gorsel.jpg" alt="google">
+        <div id="search-box">
+            <span>Search the web using Google</span><br>
+            <input type="text" name="text" id="search-btn"><br>
+            <button type="submit">Google Search</button>
+            <button type="submit">I'm feeling lucky</button>
+        </div>
+        <div id="options">
+            <div class="option-box" id="option-box1">
+                <span>Special Searches</span><br>
+                <a href="">Stanford Search</a><br>
+                <a href="">Linux Search</a>
+            </div>
+            <div class="option-box" id="option-box2">
+                <a href="">Help</a><br>
+                <a href="">About Google</a><br>
+                <a href="">Company Info</a><br>
+                <a href="">Google Logos</a>
+            </div>
+            <div class="option-box" id="option-box3">
+                <span>Get Google</span><br>
+                <span>updates monthly:</span><br>
+                <input type="text" name="" id="" placeholder="your e-mail"><br>
+                <button type="submit">Subscribe</button>
+                <a href="">Archive</a>
+            </div>
+        </div>
+        <div id="footer">
+            copyright ©1998 Google Inc.
+        </div>
+    </div>
+</body>
+</html>
